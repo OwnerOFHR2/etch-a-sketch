@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya&family=Barlow:wght@200&family=Gloria+Hallelujah&family=Koulen&family=Londrina+Outline&family=Londrina+Solid:wght@300&family=Nunito:wght@200&family=Oswald&family=Poppins:wght@300&family=Roboto+Condensed&family=Roboto+Slab:wght@300&family=Teko&family=Tinos&family=Uchen&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "Gloria Hallelujah", serif;
+    color: black;
+}
+
+.title h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.board {
+    width: 340px;
+    height: 340px;
+    display: grid;
+    border: 3px solid;
+    border-radius: 4% 97% 3% 97% / 93% 5% 94% 3%;
+    border-width: 6px 4px 4px 6px;
+    overflow: hidden;
+}
+
+@media screen and (min-width: 1200px) {
+    .board {
+        width: 28vw;
+        height: 28vw;
+    }
+}
+
+.buttons button {
+    font-family: "Gloria Hallelujah", serif;
+    position: relative;
+    top: 15px;
+    color: black;
+    padding: 5px 15px;
+    background-color: white;
+    transition: 0.2s ease-in-out;
+    border-radius: 4px;
+}
+
+.buttons button:hover {
+    background-color: #d1d1d1;
+}
+
+.buttons input[type='color'] {
+    font-family: "Gloria Hallelujah", serif;
+    position: relative;
+    top: 18px;
+    color: black;
+    background-color: white;
+    transition: 0.2s ease-in-out;
+    border: 2px solid;
+    border-radius: 2% 97% 2% 97% / 93% 2% 94% 2%;
+    width: 100px;
+    height: 30px;
+    border-radius: 4px;
+}
+
+
+.sizesetter {
+    font-family: "Gloria Hallelujah", serif;
+    position: relative;
+    top: 25px;
+    color: black;
+}
+.sizesetter button{
+    font-family: "Gloria Hallelujah", serif;
+    position: relative;
+    color: black;
+    padding: 5px 10px;
+    background-color: white;
+    transition: 0.2s ease-in-out;
+    border-radius: 4px;
+}
+
+.sizesetter button:hover{
+    background-color: #d1d1d1;
+}
+
+.sizesetter input{
+    border: 2px solid;
+    font-family: "Gloria Hallelujah", serif;
+    border-radius: 2% 97% 5% 97% / 93% 7% 94% 3%;
+}
+
+.copyright p {
+    font-size: 14px;
+    position: fixed;
+    left: 15px;
+}
